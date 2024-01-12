@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Form</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      display: flex;
+      height: 100vh;
+    }
+
+    #logo {
+      padding: 60px;
+    }
+
+    .banner-left {
+      background-color: #3949AB;
+      width: 60vw;
+
+    }
+
+    .banner-left div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .banner-left span {
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    span h3 {
+      color: #FFF;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    span p {
+      color: #FFF;
+      font-family: Open Sans;
+      font-size: 14px;
+    }
+
+    .banner-right {
+      width: 40vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .banner-right h2 {
+      color: #343434;
+      font-family: Open Sans;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin: 0 100px;
+    }
+
+
+    input {
+      max-height: 36px;
+      outline: 0;
+      padding: 10px 8px;
+      border-radius: 8px;
+      border: 1px solid #D0D0D0;
+      margin-bottom: 16px;
+    }
+
+    form a {
+      color: #6F74DD;
+      font-family: Open Sans;
+      display: flex;
+      justify-content: end;
+      text-decoration: none;
+      margin-bottom: 32px;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      padding: 10px 0;
+      border-radius: 40px;
+      background: #3949AB;
+      color: #FFF;
+      border: none;
+      font-family: Open Sans;
+      font-size: 14px;
+    }
+
+    .btn-secondary {
+      gap: 8px;
+      border-radius: 40px;
+      border: 1px solid #3949AB;
+      background-color: #fff;
+      padding: 10px 0;
+      color: #3949AB;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 14px;
+    }
+
+    form small {
+      color: #828282;
+      font-family: Open Sans;
+      font-size: 14px;
+      text-align: center;
+      margin: 16px 0;
+    }
+
+    .liner-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .liner-container span {
+      white-space: nowrap;
+    }
+
+    .liner-container .line {
+      flex: 1;
+      height: 1px;
+      background: #E6E9FA;
+      margin: 0 10px;
+      border: none;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .social-buttons .btn-secondary {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="banner-left">
+      <img id="logo" src="images/logo.png" alt="">
+      <div>
+        <span>
+          <img src="images/illustration.png" alt="">
+          <h3>Welcome aboard my friend</h3>
+          <p>just a couple of clicks and we start</p>
+        </span>
+      </div>
+    </div>
+    <div class="banner-right">
+      <h2>Welcome</h2>
+      <form>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <a href="">Forgot password?</a>
+        <button class="btn-primary">Log in</button>
+        <small class="liner-container">
+          <hr class="line"><span>or</span>
+          <hr class="line">
+        </small>
+        <div class="social-buttons">
+          <button class="btn-secondary">Google</button>
+          <button class="btn-secondary">GitLab</button>
+        </div>
+        <small>Have no account yet?</small>
+        <button class="btn-secondary">Registration</button>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
