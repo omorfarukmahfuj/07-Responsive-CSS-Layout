@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Task 04</title>
+  <style>
+    section {
+      width: 80%;
+      margin: 25px auto;
+      font-family: sans-serif;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: 200px;
+      border: 2px solid lightgray;
+      gap: 25px;
+      margin-bottom: 25px;
+    }
+
+    .card-image {
+      width: 250px;
+      height: 200px;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-info * {
+      margin-bottom: 10px;
+    }
+
+    .card-info p {
+      color: gray;
+      font-style: 10px;
+    }
+
+    button {
+      border: none;
+      background-color: dodgerblue;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 576px) {
+      .card {
+        grid-template-columns: auto;
+        gap: 0;
+      }
+
+      .card-image {
+        width: 100%;
+      }
+
+      .card-info {
+        padding: 15px;
+      }
+      .card-info h2 {
+        margin: 0;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="card">
+      <div class="card-image"><img src="../images/burger.avif" alt=""></div>
+      <div class="card-info">
+        <h2>Good Delicious Burger and Fries</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad rem perferendis tempore quo, deleniti
+          consectetur itaque accusantium asperiores quod hic omnis explicabo labore sapiente numquam ex tenetur in
+          incidunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, iure ipsam? Sit maiores nemo
+          repellendus quos odit ipsum libero in consequuntur eius accusamus expedita aut, earum error perferendis. Et,
+          quisquam!</p>
+        <button>Order</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image"><img src="../images/noodles.jpeg" alt=""></div>
+      <div class="card-info">
+        <h2>Tasty Hot Spicey Naga Noodles</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad rem perferendis tempore quo, deleniti
+          consectetur itaque accusantium asperiores quod hic omnis explicabo labore sapiente numquam ex tenetur in
+          incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt dignissimos, accusamus quibusdam hic
+          nam porro pariatur sapiente iure quaerat nobis, modi corporis delectus numquam minima quae obcaecati eaque
+          culpa laudantium.</p>
+        <button>Order</button>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
