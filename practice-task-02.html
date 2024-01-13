@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Task 02</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+
+    }
+
+    section {
+      color: white;
+      font-size: 32px;
+      font-family: sans-serif;
+      font-weight: bold;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        "div1 div1 div2 div2"
+        "div1 div1 div2 div2"
+        "div1 div1 div3 div4"
+        "div1 div1 div3 div4";
+      height: calc(100vh - 20px);
+      grid-gap: 10px;
+      margin: 10px;
+
+    }
+
+    .div1 {
+      background-color: crimson;
+      grid-area: div1;
+      padding: 10px;
+    }
+
+
+    .div2 {
+      background-color: orange;
+      grid-area: div2;
+      padding: 10px;
+    }
+
+    .div3 {
+      background-color: blueviolet;
+      grid-area: div3;
+      padding: 10px;
+    }
+
+    .div4 {
+      background-color: steelblue;
+      grid-area: div4;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="div1">1</div>
+    <div class="div2">2</div>
+    <div class="div3">3</div>
+    <div class="div4">4</div>
+  </section>
+</body>
+
+</html>
